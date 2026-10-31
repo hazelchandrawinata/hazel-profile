@@ -1,0 +1,9 @@
+# Local development
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+
+# Ignore local build artifacts if added in future
+node_modules/
