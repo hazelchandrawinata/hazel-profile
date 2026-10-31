@@ -8,7 +8,7 @@ A lightweight static personal portfolio built with HTML, CSS, and vanilla JavaSc
 - `css/style.css` — site styling and responsive layout
 - `js/main.js` — navigation, reveal animations, and scroll behavior
 - `assets/icons/favicon.svg` — favicon based on the HC monogram
-- `assets/documents/` — place the final CV PDF here when available
+- `assets/documents/` — reserved for verified documents when available
 
 ## Appearance
 
@@ -39,13 +39,14 @@ Edit the content directly in `index.html` to update:
 - Contact links
 - Footer text
 
-## Add the CV file
+## Add a CV file
 
-When a verified CV PDF is available, save it in the folder below:
+The navigation links to Hazel's verified LinkedIn profile until a CV is available. To
+add a verified CV PDF later, save it at:
 
 - `assets/documents/Hazel-Chandrawinata-CV.pdf`
 
-The navigation and hero CTA are prepared to use that file when it is available. The current implementation does not publish a fake or unverified CV.
+Do not link a CV until that file has been added and verified.
 
 ## Publish on GitHub Pages
 
