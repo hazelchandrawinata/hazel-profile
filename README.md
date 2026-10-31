@@ -58,3 +58,12 @@ Do not link a CV until that file has been added and verified.
 6. GitHub Pages will provide a live URL for the site.
 
 This website is designed as a static site and does not require a backend or paid hosting.
+
+## Search engine indexing
+
+The site includes `robots.txt`, `sitemap.xml`, and structured Person data to help search
+engines discover and understand the profile. After publishing, add the site URL as a
+property in Google Search Console, verify ownership using a method supported for GitHub
+Pages, submit `https://hazelchandrawinata.github.io/hazel-profile/sitemap.xml`, and use
+URL Inspection to request indexing of the homepage. Indexing and search rankings are
+decided by each search engine and cannot be guaranteed.

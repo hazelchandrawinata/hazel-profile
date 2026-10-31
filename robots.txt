@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hazelchandrawinata.github.io/hazel-profile/sitemap.xml
