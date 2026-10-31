@@ -946,30 +946,6 @@ p {
   transform: translateY(0);
 }
 
-.toast {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(12px);
-  background: var(--button-background);
-  color: var(--button-foreground);
-  padding: 0.9rem 1.2rem;
-  border-radius: 999px;
-  max-width: min(90vw, 520px);
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
-  box-shadow: var(--shadow-soft);
-  z-index: 60;
-}
-
-.toast.show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(22px);
@@ -1034,6 +1010,20 @@ p {
   .nav-wrap {
     position: relative;
     min-height: 72px;
+    justify-content: flex-start;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+
+  .theme-toggle {
+    order: 2;
+  }
+
+  .nav-toggle {
+    order: 3;
+    margin-left: 0.55rem;
   }
 
   .nav-cta {
