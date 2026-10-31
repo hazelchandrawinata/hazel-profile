@@ -4,8 +4,6 @@ const navLinks = document.querySelectorAll('.site-nav a');
 const revealItems = document.querySelectorAll('.reveal');
 const backToTop = document.querySelector('.back-to-top');
 const yearElement = document.getElementById('year');
-const cvToast = document.getElementById('cv-toast');
-const cvTrigger = document.querySelector('[data-cv-trigger]');
 const themeToggle = document.querySelector('.theme-toggle');
 const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 const themeStorageKey = 'hazel-profile-theme';
@@ -106,40 +104,6 @@ const sectionObserver = new IntersectionObserver(
 document.querySelectorAll('main section[id]').forEach((section) => {
   sectionObserver.observe(section);
 });
-
-const showToast = (message) => {
-  if (!cvToast) return;
-  cvToast.textContent = message;
-  cvToast.classList.add('show');
-  window.clearTimeout(showToast.timer);
-  showToast.timer = window.setTimeout(() => {
-    cvToast.classList.remove('show');
-  }, 3200);
-};
-
-if (cvTrigger) {
-  cvTrigger.addEventListener('click', (event) => {
-    event.preventDefault();
-    const cvPath = 'assets/documents/Hazel-Chandrawinata-CV.pdf';
-
-    const shouldDownload = window.confirm(
-      'A CV file has not been added yet. Add the PDF to assets/documents/Hazel-Chandrawinata-CV.pdf and refresh to enable direct download.'
-    );
-
-    if (shouldDownload) {
-      showToast('CV file not added yet. Save your PDF to assets/documents and refresh the page.');
-    } else {
-      showToast('CV file not added yet. Save your PDF to assets/documents and refresh the page.');
-    }
-
-    window.location.href = '#contact';
-
-    const pdfExists = false;
-    if (pdfExists) {
-      window.location.href = cvPath;
-    }
-  });
-}
 
 window.addEventListener('scroll', () => {
   if (!backToTop) return;
